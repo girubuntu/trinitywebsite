@@ -89,6 +89,7 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: #fff;
+    transition: 3s;
 }
 #menuBtn {
     width: 50px;
@@ -503,6 +504,9 @@ form .student-details .input-box select{
     margin: 30px 0;
     
 }
+.container-content form .button #submit-button {
+    cursor: pointer;
+}
 
 .container-content form .button input {
     height: 100%;
@@ -517,8 +521,7 @@ form .student-details .input-box select{
     height: auto;
     width: auto;
     padding-top: 40px;
-    padding-bottom: 40px;
-   
+    padding-bottom: 40px;   
     text-align: center;
    
     
