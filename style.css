@@ -419,99 +419,10 @@ hr {
 }
 
 /* apply */
-
-.container {
-    height: 100vh;
-    background: linear-gradient(rgba(0.5,0.5,0.5,0.5), #0a337a);
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    
-}
-.container .container-content {
-    max-width: 600px;
-    width: 100%;
-    background: linear-gradient(rgba(240, 237, 237, 0.5), #fff);
-    padding: 15px 30px;
-    border-radius: 5px;
-    box-shadow: 0 10px 20px 3px #120f1b;
-   
-    
-    
-    
-}
-.container-content .title h1{
-    font-size: 30px;
-    font-weight: bold;
-    position: relative;
-
-}
-
-.container-content .title h1::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 3px;
-    width: 50px;
-    background: linear-gradient(rgba(252, 253, 253, 0.5), #9ebdf4);
-}
-
-.container-content form .student-details {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   margin: 20px 0 12px 0;
-} 
-form h2{
-    margin: 20px;
-    font-size: 30px;
-}
-form .student-details span{
- border-bottom: 10px;
-}
-
-form .student-details .input-box{
-    width: calc(100% / 2-30px);
-    margin-bottom: 10px;
-    
-}
-
-form .student-details .input-box .details {
-    margin-bottom: 10px;
-    font-size: 105x;
-}
-form .student-details .input-box input{
-    
-    outline: none;
-    border-radius: 5px;
-    border: 1px solid rgb(51, 49, 49);
-    padding-left: 5px;
-    height: 25px;
-    width: 75%;
-    border-bottom-width: 2px;
-}
-form .student-details .input-box input[type="checkbox"]{
-    width: 10px;
-}
-
-form .student-details .input-box select{
-    height: 30px;
-}
-
-.container-content form .button {
-    height: 35px;
-    margin: 30px 0;
-    
-}
-.container-content form .button #submit-button {
-    cursor: pointer;
-}
-
-.container-content form .button input {
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(rgba(5, 5, 5, 0.5), #9ebdf4);
+.form-content {
+    text-align: center;
+    padding: 40px;
+    /* margin: 20px; */
 }
 
 /* footer */
@@ -580,12 +491,7 @@ hr {
     
 
 }
-.form-box {
-    display: block;
-}
-.form-box .row50 {
-    display: block;
-}
+
 .inputBox{
     width: 100%;
 
@@ -606,48 +512,3 @@ hr {
 
 }
 
-@media (max-width: 584px) {
-
-.container {
-   
-   
-    
-    height: auto;
-     
-    
-}
-.container .container-content {
-    max-width: 500px;
-    width: 100%;   
-    box-shadow: none
-    
-}
-.container-content .title h1{
-    font-size: 20px;
-    margin-top: 20px;
-
-}
-form h2 {
-    font-size: 20px;
-}
-
-.container-content form .button input {
-    height: 100%;
-    width: 50%;
-    background: linear-gradient(rgba(5, 5, 5, 0.5), #9ebdf4);
-    cursor: pointer;
-}
-form .student-details{
-    display: flex;
-    flex-direction: column;
-}
-form .student-details .input-box input{
-    
-    
-    width: 50%;
-   
-}
-
-
-    
-}
