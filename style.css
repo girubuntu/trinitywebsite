@@ -4,6 +4,11 @@
     
     font-family: 'Poppins', sans-serif;
 }
+a {
+    color: #fff;
+    text-decoration: none;
+
+}
 
 #homePic {
     background: linear-gradient(rgba(3, 3, 3, 0.5), #172238),url(img/building.jpg);
@@ -440,10 +445,10 @@ hr {
 
 #footer .footer-content {
     
-    align-items: center;
-     display: flex;
-     justify-content: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 1rem;
    
     
 }
@@ -502,11 +507,19 @@ hr {
     display: block;   
     
 }
+.form-box .row50{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
 .infobox {
     padding: 10px;
 }
 .team-col {
     flex-basis: 100%;
+}
+#footer .footer-content {
+    grid-template-columns: 1fr;
 }
 
 
