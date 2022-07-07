@@ -25,8 +25,7 @@ a {
 .home-text{
     text-align: center;
     color: #fff;
-    padding-top: 180px;
-
+    padding-top: 180px
 }
 .home-text h1 {
     font-size: 70px;
@@ -75,6 +74,10 @@ a {
 }
 .homeBtn a:hover{
     color: #172238;
+}
+.bible-verse {
+    color: #70a7e2;
+    font-weight: 700;
 }
 #sidenav {
     width: 200px;
@@ -154,26 +157,20 @@ nav ul li a{
 .program-box {
     width: 80%;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
+    display: grid;  
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
 
-}
-.programs {
-    flex-basis: 50%;
-}
-.programs:first-child {
-    margin-bottom: 30px;
-}
-.programs video{
-    width: 70%;
-    border-radius: 10px;
+
+.program-content video{
+  width: 600px;
+  border-radius: 20px;
 }
 .programs h1{
     margin-bottom: 20px;
     font-weight: 800;
-    color: #2b3e73;
+    color: #70a7e2;
 }
 .programs p {
     left: 0;
@@ -182,11 +179,16 @@ nav ul li a{
     font-weight: bold;
 }
 .programs p span {
-    color: #2b3e73;
+    color: #70a7e2;
     font-weight: bold;
 }
 .programs-desc {
     margin-bottom: 20px;
+}
+.programs-desc ul li {
+    list-style: none;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 /* history */
@@ -197,54 +199,46 @@ nav ul li a{
 #service {
     width: 100%;
     padding: 70px 0;
-    background: #e9f2f7;
+    background: rgb(32, 48, 90);
+    color: #fff;
 }
+#service p, h1 {
+    color: #fff;
+}
+ 
 .service-box {
     width: 80%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
     margin: auto;
 }
+
 .single-service {
-    flex-basis: 48%;
-    text-align: center;
-    border-radius: 7px;
-    margin-bottom: 20px;
-    color: #fff;
-    position: relative;
-}
-.single-service img {
-    width: 100%; 
-    border-radius: 7px;
-
-}
-.overlay {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
     width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    border-radius: 7px;
-    cursor: pointer;
-    background: linear-gradient(rgba(0.5,0.5,0.5,0.5), #041738);
-    opacity: 0;
-    transition: 1s;
-
+    text-align: center;
+    margin: 20px;
+   
 }
 
-.single-service:hover .overlay{
-    opacity: 1;
+.single-service img {
+    border-radius: 7px;
 }
 
 .service-desc {
-    width: 80%;
-    position: absolute;
-    bottom: 40%;
-    left: 20%;
-    transform: translateX(-50px);
-    opacity: 0;
-    transition: 1s;
+    line-height: 1.5;
+    color: #fff;
 }
+.service-desc h2 {
+    margin-bottom: 2rem;
+}
+.service-desc h3 {
+    margin: 1rem;
+}
+/*
 
 .service-desc p {
     font-size: 14px;
@@ -261,7 +255,7 @@ hr {
     margin: 15px auto;
     width: 60%;
 
-}
+} */
 
 /* team  */
 
@@ -271,15 +265,14 @@ hr {
 }
 
 .team-row {
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    height: 400px;
 }
 .team-col {
-    flex-basis: 28%;
+    flex-basis: 30%;
     padding: 10px;
     margin-bottom: 30px;
     border-radius: 5px;
@@ -299,12 +292,13 @@ hr {
 }
 .user img {
     
-    width: 100px;
-    border-radius: 75%;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
     
 }
 .user-info small {
-    color: #041738;
+    color: #70a7e2;
 }
 
 .team-col:hover {
@@ -315,7 +309,7 @@ hr {
 
 #contact {
     width: 100%;
-    padding: 70px 0;
+    padding: 70px;
     background: rgb(32, 48, 90);
     color: #fff;
 }
@@ -332,7 +326,7 @@ hr {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-itSems: center;
     text-align: center;
     
 }
@@ -341,8 +335,7 @@ hr {
 }
 
 .form-box {
-    position: relative;
-    width: 100%;
+       width: 100%;
 }
 .form-box .row50{
     display: flex;
@@ -452,76 +445,90 @@ hr {
    
     
 }
-@media screen and (max-width: 770px){
+@media screen and (max-width: 600px){
+    #homePic {
+        height: auto;
+    }
+    .home-text{    
+        padding-top: 100px
+    }
     .home-text h1 {
-    font-size: 20px;
-    margin-top: 20px;
-    outline: none;
-    
-    
+        font-size: 25px;
+    }
+    .home-text p {
+        font-size: 20px;
+    }
+    .title-text {
+    padding-bottom: 2px;
 }
-.home-text p {
-    font-size: 10px;
-    line-height: 15px;
-    
+
+    .program-box {   
+        display: block;
+    }
+    .program-content video{
+        width: 300px;
+        margin-bottom: 10px;
+    }
+    .programs h1{
+    margin-bottom: 5px;
 }
-.homeBtn a {
+
+
+    #history .program-box video {
+        width: 300px;
+    }
+    .service-box {    
+        display: block;
+    }
+    .single-service {
+    display: block;  
+    }
+    #service {
+        margin: auto;
+    }
+    #service img {
+        width: 300px;
+    }
+    #service h1 {
+        font-size: 25px;
+    }
+    #service p {
+        font-size: 20px;
+    }
+    #service .service-desc h2 {
+        font-size: 20px;
+    }
+     #service .service-desc h3 {
+        font-size: 15px;
+    }
+     #service .service-desc p {
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+    .team-row {
     
     display: block;
-    margin: 20px auto;   
-
-}
-.title-text h1{
-    font-size: 35px;
-}
-.programs {
-    flex-basis: 100%;
-}
-.single-service {
-    flex-basis: 100%;
-    margin-bottom: 30px;
-}
-.service-desc p {
-    font-size: 12px;
-}
-hr {
-    margin: 5px auto;
-}
-.service-desc {
-    bottom: 20%;
-    left: 25%;
-}
-.single-service:hover .service-desc {
-    bottom: 25% !important;
-    
-
-}
-
-.inputBox{
-    width: 100%;
-
-}
-.contact-box {
-    width: 100%;
-    margin: auto;
-    display: block;   
+    height: auto;    
+    }
+    #contact {
+   
+    padding: 10px;
     
 }
-.form-box .row50{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+    .form-box .row50{
+        display: block;
+    }
+    .inputBox{   
+    width: 75%;
 }
 .infobox {
     padding: 10px;
 }
-.team-col {
-    flex-basis: 100%;
-}
-#footer .footer-content {
-    grid-template-columns: 1fr;
+#footer .footer-content {    
+    display: block;
+   }
 }
 
-
+@media screen and (max-width: 1024px){
+  
 }
-
