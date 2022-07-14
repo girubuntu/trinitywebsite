@@ -11,7 +11,7 @@ a {
 }
 
 #homePic {
-    background: linear-gradient(rgba(3, 3, 3, 0.5), #172238),url(img/building.jpg);
+    background: linear-gradient(rgba(3, 3, 3, 0.5), #172238),url(img/building1.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
