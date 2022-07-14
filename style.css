@@ -199,7 +199,7 @@ nav ul li a{
 #service {
     width: 100%;
     padding: 70px 0;
-    background: rgb(32, 48, 90);
+    background: rgb(17, 27, 50);
     color: #fff;
 }
 #service p, h1 {
@@ -215,17 +215,43 @@ nav ul li a{
 }
 
 .single-service {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
-    width: 100%;
+    width: 90%;
     text-align: center;
     margin: 20px;
    
 }
+.single-service-items {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
-.single-service img {
-    border-radius: 7px;
+}
+
+/* .swiper-slide img {
+    width: 300px;
+} */
+ .swiper {
+    width: 80%;
+    height: fit-content;
+} 
+
+.swiper-slide img {
+    height: 500px;
+    width: 100%;
+    border-radius: 20px;
+}
+.swiper .swiper-button-prev::after,
+.swiper .swiper-button-next::after {
+    color: #fff;  
+    right:10px;
+    padding: 10px;  
+
 }
 
 .service-desc {
@@ -269,12 +295,12 @@ hr {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    height: 400px;
+    height: 420px;
 }
 .team-col {
     flex-basis: 30%;
     padding: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     border-radius: 5px;
     box-shadow: 0 10px 20px 3px #e9f2f7;
     cursor: pointer;
@@ -292,8 +318,8 @@ hr {
 }
 .user img {
     
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 10px;
     
 }
@@ -310,7 +336,7 @@ hr {
 #contact {
     width: 100%;
     padding: 70px;
-    background: rgb(32, 48, 90);
+    background: rgb(17, 27, 50);
     color: #fff;
 }
 .contact-section{
@@ -326,7 +352,7 @@ hr {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    align-itSems: center;
+    align-items: center;
     text-align: center;
     
 }
@@ -370,7 +396,7 @@ hr {
     width: 100%;
 }
 .inputBox input[type="submit"] {
-    background: #041738;
+    background: #223454;
     color: #fff;
     border: none;
     font-size: 1.1em;
@@ -441,9 +467,13 @@ hr {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
-    margin-bottom: 1rem;
-   
+    margin-bottom: 1rem;  
     
+}
+#footer .footer-content_details {
+    display: flex;
+    flex-direction: column;
+
 }
 @media screen and (max-width: 600px){
     #homePic {
@@ -471,7 +501,10 @@ hr {
     }
     .programs h1{
     margin-bottom: 5px;
-}
+    }
+    .programs p {
+    font-size: 15px;
+    }
 
 
     #history .program-box video {
@@ -483,12 +516,19 @@ hr {
     .single-service {
     display: block;  
     }
+    .single-service-items {
+    width: 100%;
+    display: block;
+}
+.swiper-slide img {
+    height: 300px;
+    width: 100%;
+}
     #service {
         margin: auto;
     }
-    #service img {
-        width: 300px;
-    }
+  
+  
     #service h1 {
         font-size: 25px;
     }
