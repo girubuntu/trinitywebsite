@@ -5,17 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Application form</title>
+    <title>TIA | Application form</title>
+
+    <style>
+       .applicationBtn {
+    
+            padding: 30px;
+            background: #172238;
+            color: #fff;
+            margin: 30px 20px;
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+        }
+        .form-content iframe{
+                width: 800px;
+                height: 100vh;
+            }
+        @media screen and (max-width: 600px){
+
+            .applicationBtn {
+                display: block;
+            }
+            h2 {
+                display: none;
+            }
+           
+           .form-content iframe{
+                width: 300px;
+                
+            }
+        }
+    </style>
 
 </head>
 <body>
     <div class="container">
+        <div class="applicationBtn">
+            <h2>Trinity Internation Academy Registration Page</h2>
+            <a href="./index.html">Back To Home Page</a>
+        </div> 
         <div class="form-content">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfMV9LCkE20qLXdW6LncDeHpbDKqrf2ioJof_B2FPwNkXb_pw/viewform?usp=pp_url" width="600" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfMV9LCkE20qLXdW6LncDeHpbDKqrf2ioJof_B2FPwNkXb_pw/viewform?usp=pp_url">Loading…</iframe>
 
         </div>
-
-        
+            
 
     
     </div>

@@ -42,6 +42,16 @@ a {
 .homeBtn {
     margin: 70px auto 0;
 }
+.applicationBtn {
+    
+    padding: 30px;
+    background: #172238;
+    color: #fff;
+    margin: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
 
 .homeBtn a {
     width: 150px;
@@ -248,10 +258,11 @@ nav ul li a{
 }
 .swiper .swiper-button-prev::after,
 .swiper .swiper-button-next::after {
-    color: #fff;  
-    right:10px;
-    padding: 10px;  
+    display: none; 
 
+}
+.swiper-pagination {
+    color: #fff;
 }
 
 .service-desc {
@@ -520,9 +531,12 @@ hr {
     width: 100%;
     display: block;
 }
+.swiper {
+    width: 100%;
+}
 .swiper-slide img {
     height: 300px;
-    width: 100%;
+    width: 300px;
 }
     #service {
         margin: auto;
