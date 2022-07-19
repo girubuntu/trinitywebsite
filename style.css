@@ -1,13 +1,19 @@
 * {
     margin: 0;
-    padding: 0;
-    
+    padding: 0;    
     font-family: 'Poppins', sans-serif;
 }
 a {
     color: #fff;
     text-decoration: none;
-
+}
+.primary-text {
+    color: #70a7e2;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+.secondary-text {
+    font-size: 15px;
 }
 
 #homePic {
@@ -134,7 +140,7 @@ nav ul li a{
 }
 .title-text {
     text-align: center;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
 }
 .title-text p{
     margin: auto;
@@ -167,19 +173,11 @@ nav ul li a{
 .program-box {
     width: 80%;
     margin: auto;
-    display: grid;  
-    grid-template-columns: 1fr 2fr;
-    gap: 2rem;
 }
 
-
-.program-content video{
-  width: 600px;
-  border-radius: 20px;
-}
 .programs h1{
     margin-bottom: 20px;
-    font-weight: 800;
+    font-weight: 600;
     color: #70a7e2;
 }
 .programs p {
@@ -202,7 +200,19 @@ nav ul li a{
 }
 
 /* history */
-
+#history {
+    width: 100%;
+    padding: 70px 0;
+}
+#history .program-box {
+    text-align: center;
+}
+#history .programs {
+    margin-bottom: 20px;
+}
+#history .program-box p {
+    text-align: center;
+}
 
 /* service */
 
@@ -350,29 +360,23 @@ hr {
     background: rgb(17, 27, 50);
     color: #fff;
 }
-.contact-section{
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-}
+
 .contact-box {
-    width: 80%;
-    margin: auto;
+    width: 70%;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    text-align: center;
-    
+    text-align: center; 
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4rem;
+
 }
 #contact .title-text p{
     color: #fff;
 }
 
 .form-box {
-       width: 100%;
+       width: 80%;
 }
 .form-box .row50{
     display: flex;
@@ -500,7 +504,7 @@ hr {
         font-size: 20px;
     }
     .title-text {
-    padding-bottom: 2px;
+    padding-bottom: 10px;
 }
 
     .program-box {   
@@ -516,10 +520,13 @@ hr {
     .programs p {
     font-size: 15px;
     }
-
+    #history {
+        padding: 30px;
+    }
 
     #history .program-box video {
         width: 300px;
+        height: 400px;
     }
     .service-box {    
         display: block;
@@ -567,16 +574,18 @@ hr {
     #contact {
    
     padding: 10px;
-    
-}
+    }
     .form-box .row50{
         display: block;
     }
     .inputBox{   
-    width: 75%;
+    width: 100%;
 }
 .infobox {
     padding: 10px;
+}
+.contact-map {
+    display: none;
 }
 #footer .footer-content {    
     display: block;
