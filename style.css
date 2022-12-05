@@ -7,6 +7,9 @@ a {
     color: #fff;
     text-decoration: none;
 }
+h1 {
+    font-size: 60px;
+}
 .primary-text {
     color: #70a7e2;
     font-size: 20px;
@@ -34,7 +37,7 @@ a {
     padding-top: 180px
 }
 .home-text h1 {
-    font-size: 70px;
+    /* font-size: 70px; */
     font-family: 'Kaushan Script', cursive;
 }
 .home-text p {
@@ -167,9 +170,9 @@ nav ul li a{
 
 }
 
-.title-text h1{
-    font-size: 50px;
-}
+/* .title-text h1{
+    font-size: 70px;
+} */
 .program-box {
     width: 80%;
     margin: auto;
@@ -497,9 +500,9 @@ hr {
     .home-text{    
         padding-top: 100px
     }
-    .home-text h1 {
+    /* .home-text h1 {
         font-size: 25px;
-    }
+    } */
     .home-text p {
         font-size: 20px;
     }
@@ -550,9 +553,9 @@ hr {
     }
   
   
-    #service h1 {
+    /* #service h1 {
         font-size: 25px;
-    }
+    } */
     #service p {
         font-size: 20px;
     }
